@@ -1,0 +1,12 @@
+
+<div class="row">
+  <aside class="col-md-12">
+    <%= for topic <- @topics do %>
+    <section>
+      <%= render "topic.html", topic: topic, conn: @conn %>
+      <%= link "Show", to: topic_path(@conn, :show, topic), class: "btn btn-default btn-xs" %>
+      <%= link "Edit", to: topic_path(@conn, :edit, topic), class: "btn btn-default btn-xs" %>
+    </section>
+    <% end %>
+  </aside>
+</div>

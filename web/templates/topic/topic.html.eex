@@ -1,0 +1,4 @@
+<a href="<%= topic_path(@conn, :show, @topic) %>">
+</a>
+<h1><%= @topic.name %></h1>
+<p><%= @topic.description %></p>
