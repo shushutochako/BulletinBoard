@@ -4,6 +4,7 @@ defmodule BulletinBoard.Topic do
   schema "topics" do
     field :name, :string
     field :description, :string
+    has_many :content, BulletinBoard.Comment
  
     timestamps
   end 
