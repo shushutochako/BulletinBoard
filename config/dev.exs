@@ -36,7 +36,7 @@ config :phoenix, :stacktrace_depth, 20
 config :bulletinBoard, BulletinBoard.Repo,
   adapter: Ecto.Adapters.MySQL,
   username: "root",
-  password: "xxxxxx",
+  password: "12181218",
   database: "bulletinboard_dev",
   hostname: "localhost",
   pool_size: 10
