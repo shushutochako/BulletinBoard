@@ -1,7 +1,7 @@
-defmodule BulletinBoard.Content do
+defmodule BulletinBoard.Comment do
   use BulletinBoard.Web, :model
 
-  schema "contents" do
+  schema "comments" do
     field :content, :string
     belongs_to :topic, BulletinBoard.Topic
 
