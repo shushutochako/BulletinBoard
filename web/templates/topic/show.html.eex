@@ -17,7 +17,7 @@
  <div class="row">
  <aside class="col-md-4">
     <hr>
-    <%= form_tag("/comments", method: :post, conn: @conn, id: @topic.id) %>
+    <%= form_tag("/topics/:id/comment", method: :post) %>
       <div class="form-group">
         <label>ニックネーム</label>
         <input type="text" name="name" size="40">
