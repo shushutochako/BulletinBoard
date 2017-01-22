@@ -19,6 +19,12 @@ defmodule BulletinBoard.Router do
     resources "/topics", TopicController
   end
 
+  scope "/topics", BulletinBoard do
+    pipe_through :browser
+    post "/:id/comment", TopicController, :comment
+  end
+  
+
   # Other scopes may use custom stacks.
   # scope "/api", BulletinBoard do
   #   pipe_through :api

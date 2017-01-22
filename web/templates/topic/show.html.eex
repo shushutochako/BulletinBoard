@@ -13,3 +13,21 @@
     </section>
   </aside>
  </div>
+
+ <div class="row">
+ <aside class="col-md-4">
+    <hr>
+    <%= form_tag("/comments", method: :post, conn: @conn, id: @topic.id) %>
+      <div class="form-group">
+        <label>ニックネーム</label>
+        <input type="text" name="name" size="40">
+      </div>
+      <div class="form-group">
+        <label>コメント</label>
+        <textarea name="comment" rows="10" cols="85"></textarea>
+      </div>
+      <input type="submit" value="投稿">
+    </form>
+ </aside> 
+ </div>
+ 

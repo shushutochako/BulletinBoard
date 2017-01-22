@@ -1,6 +1,6 @@
 <div class="row">
   <aside class="col-md-12">
-    <%= link "新しいスレッド", to: "./new" %>
+    <%= link "新しいスレッド", to: "./topics/new" %>
     <%= for topic <- @topics do %>
     <section>
       <%= render "topic.html", topic: topic, conn: @conn %>

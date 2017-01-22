@@ -29,5 +29,10 @@ defmodule BulletinBoard.TopicController do
     topic = Repo.get(Topic, id)
     render conn, "show.html", topic: topic
   end
+  
+  def comment(conn, %{"id" => id}) do
+    topic = Repo.get(Topic, id)
+    render conn, "show.html", topic: topic
+  end
 
 end
